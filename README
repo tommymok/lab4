@@ -1,0 +1,22 @@
+(A)
+
+0000000100000f30 T __Z7averagePdRd
+0000000100000f60 T __Z7averageif
+0000000100000000 T __mh_execute_header
+0000000100000f90 T _main
+                 U dyld_stub_binder
+
+
+(B)
+The output should be 
+1 8
+4 8
+4 8
+8 8
+
+so different types got different size, it depend on compiler,
+char should be 1 bits,
+int  should be 4 bits,
+float should be 4 bits,
+double should be 8 bits,
+and the pointer, it default 8 bits.
